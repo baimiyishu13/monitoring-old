@@ -2,7 +2,7 @@
 
 ###  dcgm-exporter
 
- <img src="./image/dcgm-exporter/image-20230905105802365.png" alt="image-20230905105802365" style="zoom: 20%;" />
+ <img src="./image/dcgm-exporter/image-20230905105802365.png" alt="image-20230905105802365" width="50%" />
 
 文档：https://github.com/NVIDIA/dcgm-exporter
 
