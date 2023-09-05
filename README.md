@@ -33,7 +33,7 @@ UI可视化的Prometheus中手机和抓取的数据，有自己UI，但是还可
 
 1. 将所有需要的配置文件放在一起，创建这些yaml，还需要正确的顺序执行（效率非常的低，需要付出很多努力）
 
- <img src="./image/Prometheus/image-20230830174440054.png" alt="image-20230830174440054"  width="50%"  />
+ <img src="./image/Prometheus/image-20230830174440054.png" alt="image-20230830174440054"  width="60%"  />
 
  更有效的方法是：Operator
 
@@ -55,7 +55,7 @@ UI可视化的Prometheus中手机和抓取的数据，有自己UI，但是还可
 
 安装完成后会看到所有的组件，这些知识创建的部分
 
- <img src="./image/Prometheus/image-20230830213625547.png" alt="image-20230830213625547"  width="50%"  />
+ <img src="./image/Prometheus/image-20230830213625547.png" alt="image-20230830213625547"  width="60%"  />
 
 访问图形用户界面:
 
@@ -75,7 +75,7 @@ $ kubectl --namespace monitoring port-forward svc/alertmanager-main 9093
 
 使用prometheus 监控 mongodb 或mysql等第三方应用程序 或 kubernetes 中的如何其他服务。
 
- <img src="./image/Prometheus/image-20230831174926647.png" alt="image-20230831174926647"  width="50%"  />
+ <img src="./image/Prometheus/image-20230831174926647.png" alt="image-20230831174926647"  width="70%"  />
 
 
 
@@ -88,7 +88,7 @@ $ kubectl --namespace monitoring port-forward svc/alertmanager-main 9093
 1. 从应用程序收集数据并转换为`prometheus`可以理解的数据
 2. 公开这些指标，使得 `prometheus` 能够抓取到它们
 
- <img src="./image/Prometheus/image-20230901094351934.png" alt="image-20230901094351934" width="50%"  />
+ <img src="./image/Prometheus/image-20230901094351934.png" alt="image-20230901094351934" width="70%"  />
 
 
 
@@ -141,7 +141,7 @@ helm install mongodb-exporter prometheus-community/prometheus-mongodb-exporter -
  kubectl port-forward svc/mongodb-exporter-prometheus-mongodb-exporter 9216
 ```
 
- <img src="./image/Prometheus/image-20230901225446518.png" alt="image-20230901225446518" width="50%" />
+ <img src="./image/Prometheus/image-20230901225446518.png" alt="image-20230901225446518" width="100%" />
 
 好处：
 
@@ -152,7 +152,7 @@ helm install mongodb-exporter prometheus-community/prometheus-mongodb-exporter -
 
 最后需要做的事添加Grafana ui 中检查这些指标，因为这通常是我们收集这些指标的原因，以便可视化它们。
 
- <img src=".\/image/Prometheus/image-20230902224546555.png" alt="image-20230902224546555" width="50%" />
+ <img src=".\/image/Prometheus/image-20230902224546555.png" alt="image-20230902224546555" width="80%" />
 
 
 
